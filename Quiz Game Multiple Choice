@@ -1,0 +1,80 @@
+print("Selamat Datang di Kuis Cabang Olahraga Atletik!")
+
+Bermain=input("Apakah kamu mau bermain kuis ini? ")
+
+if Bermain.lower() != "Ya":
+    quit()
+    
+print("Okee! Kuy Gaskeuunnnn :)")
+skor = 0
+
+print("1. Induk organisasi untuk olahraga atletik di Indonesia adalah...? ")
+print(" a. PSSI")
+print(" b. PASI")
+print(" c. PBVSI")
+print(" d. PRSI")
+
+jawaban=input("Jawaban : ")
+if jawaban.lower() == "b":
+    print('Yeayy Anda Benar!')
+    skor += 1
+else:
+    print("Salah!")
+
+print("2. Start yang digunakan untuk lari jarak menengah adalah ….? ")
+print(" a. Melayang")
+print(" b. Jongkok")
+print(" c. Duduk")
+print(" d. Berdiri")
+
+jawaban=input("Jawaban : ")
+if jawaban.lower() == "d":
+    print('Yeayy Anda Benar Lagi!')
+    skor += 1
+else:
+    print("Salah!")
+   
+
+print("3. Induk organisasi untuk olahraga atletik di dunia adalah...? ")
+print(" a. FIFA")
+print(" b. FIBA")
+print(" c. IAAF")
+print(" d. BWF")
+
+jawaban=input("Jawaban : ")
+if jawaban.lower() == "c":
+    print('Yeayy Benar, Anda Sangat Cerdas!')
+    skor += 1
+else:
+    print("Salah!")
+    
+
+print("4. Tempat untuk mendarat dalam lompat tingi yang paling aman menggunakan...? ")
+print(" a. Matras")
+print(" b. Kasur")
+print(" c. Busa")
+print(" d. Springbed")
+
+jawaban=input("Jawaban : ")
+if jawaban.lower() == "a":
+    print('Yeayy Benar,  Anda Sangat Menakjubkan!')
+    skor += 1
+else:
+    print("Salah!")
+    
+print("5. Dibawah ini yang bukan termasuk teknik dasar lompat jauh adalah ….? ")
+print(" a. Awalan")
+print(" b. Tolakan")
+print(" c. Melayang")
+print(" d. Loncatan")
+
+jawaban=input("Jawaban : ")
+if jawaban.lower() == "d":
+    print('Yeayy Benar, Sempurnaa!')
+    skor += 1
+else:
+    print("Salah!")
+
+
+print("Kamu menjawab " + str(skor) + " pertanyaan dengan benar!")
+print("Kamu mendapatkan nilai " + str((skor / 5) * 100))
